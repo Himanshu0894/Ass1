@@ -1,20 +1,21 @@
-package length;
+package reversestring;
 
 public class reverse {
 
 	public static void main(String[] args) {
-	int n = 12345;
+		// TODO Auto-generated method stub
 
-	int rev = 0;
-	int rem = 0;
-	while(n>=1) {
-		rem = n%10;
-		rev = rev * 10 +rem;
-		n = n/10;
+		String str="Geekster is my class room";
+		String []words=str.split(" ");
+		String strrev="";
+		
+		for(int i=words.length-1;i>=0;i--)
+		{
+			
+			System.out.print(words[i]+" ");
+			
+		}
+
 	}
-  
-	   System.out.println(rev);
-   
-	
-	}
+
 }
